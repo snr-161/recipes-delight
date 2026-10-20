@@ -1,0 +1,10 @@
+{
+	"config.recipesdelight.title": "Recipes Delight",
+	"config.recipesdelight.category.general": "General",
+	"config.recipesdelight.radius": "Nearby container radius",
+	"config.recipesdelight.radius.tooltip": "Radius (in blocks) around the Cooking Pot scanned for nearby chests and containers, whose contents are counted when highlighting craftable recipes in its recipe book.",
+
+	"item.recipesdelight.nuts_cookie": "Nuts Cookie",
+	"item.recipesdelight.chocolate_nuts_cookie": "Chocolate & Nuts Cookie",
+	"item.recipesdelight.chocolate_coconut_cookie": "Chocolate & Coconut Cookie"
+}

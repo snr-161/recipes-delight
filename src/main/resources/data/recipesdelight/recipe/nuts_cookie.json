@@ -1,0 +1,20 @@
+{
+	"fabric:load_conditions": [
+		{
+			"condition": "fabric:all_mods_loaded",
+			"values": ["ecologics"]
+		}
+	],
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"group": "cookie",
+	"ingredients": [
+		"minecraft:wheat",
+		"minecraft:wheat",
+		"ecologics:walnut"
+	],
+	"result": {
+		"id": "recipesdelight:nuts_cookie",
+		"count": 8
+	}
+}

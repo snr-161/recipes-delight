@@ -1,31 +1,33 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "recipesdelight",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Recipes Delight",
+	"description": "Cooking Pot recipes as craftable using ingredients stored in nearby chests and containers.",
 	"authors": [
-		"Me!"
+		"SNR"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/snrcloud/recipes-delight"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
+	"icon": "assets/recipesdelight/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"fr.snrcloud.recipesdelight.RecipesDelightMod"
 		],
 		"client": [
-			"com.example.client.ExampleModClient"
+			"fr.snrcloud.recipesdelight.client.RecipesDelightModClient"
+		],
+		"modmenu": [
+			"fr.snrcloud.recipesdelight.client.RecipesDelightModMenuIntegration"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"recipesdelight.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "recipesdelight.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -33,6 +35,12 @@
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",
 		"java": ">=25",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"farmersdelight": ">=3.6.0",
+		"cloth-config": "*",
+		"modmenu": "*"
+	},
+	"suggests": {
+		"ecologics": "*"
 	}
 }

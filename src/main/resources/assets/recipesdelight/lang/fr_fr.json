@@ -1,0 +1,10 @@
+{
+	"config.recipesdelight.title": "Recipes Delight",
+	"config.recipesdelight.category.general": "Général",
+	"config.recipesdelight.radius": "Rayon",
+	"config.recipesdelight.radius.tooltip": "Rayon (en blocs) autour du Cooking Pot dans lequel les coffres et conteneurs proches sont scannés : leur contenu est pris en compte pour surligner les recettes faisables dans son recipe book.",
+
+	"item.recipesdelight.nuts_cookie": "Cookie aux noix",
+	"item.recipesdelight.chocolate_nuts_cookie": "Cookie chocolat et noix",
+	"item.recipesdelight.chocolate_coconut_cookie": "Cookie chocolat et noix de coco"
+}
