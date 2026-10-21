@@ -12,12 +12,14 @@ import java.util.Map;
 public final class NearbyContainerClientCache {
 	private static @Nullable BlockPos pos;
 	private static Map<Item, Integer> counts = Map.of();
+	private static int revision;
 
 	private NearbyContainerClientCache() {
 	}
 
 	public static void update(NearbyContainerContentsPayload payload) {
 		pos = payload.pos();
+		revision++;
 
 		if (payload.entries().isEmpty()) {
 			counts = Map.of();
@@ -40,5 +42,9 @@ public final class NearbyContainerClientCache {
 
 	public static @Nullable BlockPos getPos() {
 		return pos;
+	}
+
+	public static int getRevision() {
+		return revision;
 	}
 }
