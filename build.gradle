@@ -36,6 +36,11 @@ dependencies {
 	implementation "maven.modrinth:cloth-config:${project.cloth_config_version}"
 	implementation "maven.modrinth:modmenu:${project.modmenu_version}"
 	implementation "maven.modrinth:ecologics:${project.ecologics_version}"
+
+	// Storage Drawers - optional at runtime (see scan/compat/StorageDrawersCompat), only present here
+	// so runClient/runServer can exercise that integration. Its drawer block entities never implement
+	// vanilla Container, so they need their own IDrawerGroup/IDrawer-based scan path.
+	implementation "maven.modrinth:storagedrawers:${project.storagedrawers_version}"
 }
 
 processResources {

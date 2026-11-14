@@ -17,6 +17,10 @@ are in your inventory or already sitting in the pot. Recipes Delight extends tha
 chests and containers** (chests, trapped chests, barrels, shulker boxes, hoppers, droppers,
 dispensers, furnaces, ...) within a configurable radius (4 blocks by default) around the pot.
 
+If [Storage Drawers](https://modrinth.com/mod/storagedrawers) is installed, drawers are recognized
+too - they don't implement the vanilla container interface chests use, so they're detected through
+Storage Drawers' own API instead.
+
 ## Configuration
 
 The scan radius is stored in `config/recipes-delight.toml`:
@@ -55,6 +59,7 @@ if Ecologics isn't present.
 - [Farmer's Delight Refabricated](https://modrinth.com/mod/farmers-delight-refabricated) 3.6.0+ (required)
 - [Cloth Config](https://modrinth.com/mod/cloth-config) and [Mod Menu](https://modrinth.com/mod/modmenu) (for the config screen)
 - [Ecologics](https://modrinth.com/mod/ecologics) (optional, unlocks the extra cookies)
+- [Storage Drawers](https://modrinth.com/mod/storagedrawers) (optional, lets drawers count as nearby storage too)
 
 ## Building from source
 
